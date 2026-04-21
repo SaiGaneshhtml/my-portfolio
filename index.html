@@ -208,6 +208,7 @@
     .btn-primary:hover { background: #fff; color: var(--bg); transform: scale(1.02); }
     .btn-secondary { background: rgba(255,255,255,0.05); color: var(--text); border: 1px solid var(--border); backdrop-filter: blur(10px); }
     .btn-secondary:hover { background: rgba(255,255,255,0.1); color: #fff; border-color: var(--border-hover); }
+    .btn-icon-only { width: 44px; padding: 0; }
 
     /* CARDS (Glassmorphism heavily enabled for readability over images) */
     .card {
@@ -280,7 +281,12 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="SaiGanesh_Dinavahi_FullStack_Developer.pdf" target="_blank" rel="noopener noreferrer" style="color:#00e5ff;">Resume 📄</a></li>
+        <li style="display: flex; align-items: center; gap: 8px;">
+          <a href="SaiGanesh_Dinavahi_FullStack_Developer.pdf" target="_blank" rel="noopener noreferrer" style="color:#00e5ff;">Resume 📄</a>
+          <a href="SaiGanesh_Dinavahi_FullStack_Developer.pdf" download title="Download Resume" style="color: var(--muted); display: flex; align-items: center; transition: color 0.2s;" onmouseover="this.style.color='#00e5ff'" onmouseout="this.style.color='var(--muted)'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+        </li>
       </ul>
     </div>
   </header>
@@ -299,7 +305,7 @@
           Over <span style="color: #ff2d78; font-weight: 500;">2+ years</span> of experience building robust digital solutions.<br/>
           Currently Engineering @ <span style="background: -webkit-linear-gradient(45deg, #aa44ff, #00e5ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700;">5G Research Project, IIT Hyderabad</span>.
         </p>
-        <div class="btn-group">
+        <div class="btn-group" style="flex-wrap: wrap;">
           <a href="#projects" class="btn btn-primary">View Projects</a>
           <a href="SaiGanesh_Dinavahi_FullStack_Developer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Resume</a>
           <a href="https://github.com/SaiGaneshhtml" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
@@ -495,8 +501,12 @@
         <div class="card" style="text-align:center; padding:60px 20px;">
           <p style="color: var(--muted); margin-bottom: 32px; font-size:16px;">I'm actively looking for new opportunities and would love to hear from you.<br>My inbox is always open.</p>
           <div class="chip-cloud" style="justify-content:center; gap:20px;">
-            <a href="mailto:saidinavahi42@gmail.com" class="chip" style="color: var(--text); padding:12px 24px; font-size:15px;">✉️ saidinavahi42@gmail.com</a>
-            <a href="tel:+918897968096" class="chip" style="color: var(--text); padding:12px 24px; font-size:15px;">📞 +91 8897968096</a>
+            <a href="mailto:saidinavahi42@gmail.com" class="chip" style="color: var(--text); padding:12px 24px; font-size:15px; cursor:pointer;">✉️ saidinavahi42@gmail.com</a>
+            <a href="tel:+918897968096" class="chip" style="color: var(--text); padding:12px 24px; font-size:15px; cursor:pointer;">📞 +91 8897968096</a>
+            <a href="https://www.linkedin.com/in/sai-ganesh-dinavahi-aa23b120a/" target="_blank" rel="noopener noreferrer" class="chip" style="color: var(--text); padding:12px 24px; font-size:15px; display:inline-flex; align-items:center; gap:8px; cursor:pointer;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#0077b5"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
